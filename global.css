@@ -1,3 +1,4 @@
+/* global.css */
 body {
   font: 100%/1.5 system-ui, sans-serif;
   display: flex;
@@ -7,4 +8,43 @@ body {
   box-sizing: border-box;
   margin: auto;
   padding: 1em;
+
+  --color-departures: steelblue; 
+  --color-arrivals: darkorange;   
+}
+
+header {
+  display: flex;
+  justify-content: space-between; 
+  gap: 1em;
+  width: 100%; 
+  margin-bottom: 1em; 
+  margin-top: 3em; 
+  align-items: center;  
+}
+
+header h1 {
+  margin-top: 0em;  
+}
+
+header label {
+  font-size: 0.9em;
+  text-align: right; 
+}
+
+#time-slider {
+  display: inline-block;;
+  margin-top: 0.2em;
+  min-width: 400px; 
+}
+
+#selected-time,
+#any-time {
+  display: block;
+  font-size: 0.85em;
+}
+
+#any-time {
+  color: gray;
+  font-style: italic;
 }
